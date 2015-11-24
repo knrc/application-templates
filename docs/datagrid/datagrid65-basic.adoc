@@ -282,10 +282,6 @@ information.
 |`REST_AUTH_METHOD` | The method used to retrieve credentials for the REST endpoint (defaults to 'BASIC') | `${REST_AUTH_METHOD}`
 |`REST_SECURITY_MODE` | Whether authentication is required only for WRITE operations or for READ operations as well (defaults to 'READ_WRITE') | `${REST_SECURITY_MODE}`
 |`REST_EXTENDED_HEADERS` |  | `${REST_EXTENDED_HEADERS}`
-|`JGROUPS_ENCRYPT_SECRET` | The name of the secret containing the keystore file | `${JGROUPS_ENCRYPT_SECRET}`
-|`JGROUPS_ENCRYPT_KEYSTORE` | The name of the keystore file within the secret | `${JGROUPS_ENCRYPT_KEYSTORE}`
-|`JGROUPS_ENCRYPT_NAME` | The name associated with the server certificate | `${JGROUPS_ENCRYPT_NAME}`
-|`JGROUPS_ENCRYPT_PASSWORD` | The password for the keystore and certificate | `${JGROUPS_ENCRYPT_PASSWORD}`
 |`JGROUPS_CLUSTER_PASSWORD` | JGroups cluster password | `${JGROUPS_CLUSTER_PASSWORD}`
 |=======================================================================
 
@@ -305,10 +301,6 @@ information.
 
 
 ==== Secrets
-
-This template requires link:../secrets/dat-app-secret.adoc[dat-app-secret.json]
-to be installed for the application to run.
-
 
 
 
