@@ -350,7 +350,7 @@
             "kind": "DeploymentConfig",
             "apiVersion": "v1",
             "metadata": {
-                "name": "${APPLICATION_NAME}-amq-drainer",
+                "name": "${APPLICATION_NAME}-drainer",
                 "labels": {
                     "application": "${APPLICATION_NAME}"
                 }
@@ -365,7 +365,7 @@
                         "imageChangeParams": {
                             "automatic": true,
                             "containerNames": [
-                                "${APPLICATION_NAME}-amq-drainer"
+                                "${APPLICATION_NAME}-drainer"
                             ],
                             "from": {
                                 "kind": "ImageStreamTag",
@@ -380,13 +380,13 @@
                 ],
                 "replicas": 1,
                 "selector": {
-                    "deploymentConfig": "${APPLICATION_NAME}-amq-drainer"
+                    "deploymentConfig": "${APPLICATION_NAME}-drainer"
                 },
                 "template": {
                     "metadata": {
-                        "name": "${APPLICATION_NAME}-amq-drainer",
+                        "name": "${APPLICATION_NAME}-drainer",
                         "labels": {
-                            "deploymentConfig": "${APPLICATION_NAME}-amq-drainer",
+                            "deploymentConfig": "${APPLICATION_NAME}-drainer",
                             "application": "${APPLICATION_NAME}"
                         }
                     },
@@ -394,7 +394,7 @@
                         "terminationGracePeriodSeconds": 60,
                         "containers": [
                             {
-                                "name": "${APPLICATION_NAME}-amq-drainer",
+                                "name": "${APPLICATION_NAME}-drainer",
                                 "image": "jboss-amq-62",
                                 "command": [
                                     "/opt/amq/bin/drain.sh"
