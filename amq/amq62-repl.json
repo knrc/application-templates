@@ -192,7 +192,7 @@
             },
             "spec": {
                 "strategy": {
-                    "type": "RollingUpdate"
+                    "type": "Rolling"
                 },
                 "triggers": [
                     {
