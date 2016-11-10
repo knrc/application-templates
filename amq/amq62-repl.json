@@ -447,6 +447,10 @@
                                         "value": "${MQ_TOPICS}"
                                     },
                                     {
+                                        "name": "BROKER_DRAINER",
+                                        "value": "true"
+                                    },
+                                    {
                                         "name": "AMQ_STORAGE_USAGE_LIMIT",
                                         "value": "${AMQ_STORAGE_USAGE_LIMIT}"
                                     }
